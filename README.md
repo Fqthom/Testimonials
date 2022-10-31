@@ -36,6 +36,8 @@ Users should be able to:
 My process started with a desktop first approach. 
 At first attempt, I attempted to flex mulitiple divs to achieve the grid style layout, before discovering the grid system in CSS. Grid is new to me and it was an interesting challenge diving into this mid-project with no priot knowledge. This approach was a bit half-hazard, but eventually arrived at the finished project.
 
+I originally had created simple hover actions when hovering over each card *as you'll see in the stylesheet*, but in the end opted away from those, due to feedback of it being a bit overwhelming for the simplicity of the page.
+
 I'm self taught as a hobby, and I imagine alot of my CSS isn't streamlined, so any feedback is more than welcome.
 ### Built with
 
