@@ -1,0 +1,157 @@
+/* 
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%) 
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
+*/
+body{
+    background-color: rgb(241, 241, 241);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    /* height: 100vh; */
+    margin: auto auto;
+}
+.container{
+    max-width: 1440px;
+    min-height: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+    /* background-color: darkblue; */
+}
+.main{
+    margin: 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        'card1 card1 card2 card3'
+        'card4 card5 card5 card3';
+    gap: 30px;
+}
+.main2{
+    margin: auto auto;
+    display: flex;
+    margin-top: 40px;
+}
+
+h1{
+    font-size: 0.90rem;
+    opacity: 90%;
+}
+h2{
+    font-size: 0.90rem;
+    opacity: 75%;
+}
+lead {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.75rem;
+}
+p{
+    font-size: 0.90rem;
+    opacity: 80%;
+    padding-top: 30px;
+    line-height: 1.6rem;
+}
+.name{
+    display: flex;
+    padding-bottom: 15px;
+    align-items: center;
+}
+.title{
+    display: inline-block;
+}
+.headshot{
+    padding-right: 30px;
+}
+.headshot img{
+    border-radius: 100%;
+    border: 3px solid hsla(263, 55%, 52%, 0.658);
+    width: 50px;
+}
+#purpleheadshot{
+    border-color: rgba(255, 255, 255, 0.651);
+}
+.card1{
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 500px;
+    background-size: 19%;
+    min-height: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    grid-area: card1;
+}
+.card2{
+    background-color: hsl(217, 19%, 35%);
+    min-height: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    grid-area: card2;
+}
+.card3{
+    background-color: white;
+    color: hsl(219, 29%, 14%);
+    min-height: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    grid-area: card3;
+}
+.card4{
+    background-color: white;
+    color: hsl(219, 29%, 14%);
+    min-height: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    grid-area: card4;
+}
+.card5{
+    background-color: hsl(219, 29%, 14%);
+    min-height: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    grid-area: card5;
+}
+/* .card1, .card2, .card3, .card4, .card5{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.418);
+} */
+.sink{
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.418);
+    /* transition: all 200ms ease-in-out; */
+}
+/* .sink:hover {
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.418);
+    transform: translateY(10px);
+    transition: all 200ms ease-in-out;
+} */
+@media (max-width:820px){
+    .main{
+        display: block;
+        padding: 0 20px;
+    }
+    .card1, .card2, .card3, .card4, .card5{
+        margin-top: 30px;
+    }
+    .card1{
+        margin-top: -60px;
+    }
+    .card5{
+        margin-bottom: 30px
+    }
+}
+@media (max-width:420px){
+    .card1 {
+        background-position-x: 150px;
+        background-size: 44%;
+    }
+}
